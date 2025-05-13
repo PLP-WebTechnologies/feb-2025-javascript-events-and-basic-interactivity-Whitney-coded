@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  max-width: 600px;
+}
+
+#hoverBox {
+  width: 200px;
+  height: 100px;
+  background-color: lightgray;
+  margin: 10px 0;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+#hoverBox.hovered {
+  background-color: #87ceeb;
+  color: white;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+#colorButton.changed {
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.5s ease;
+}
+
+.gallery-image {
+  display: none;
+  width: 100%;
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
+}
+
+.gallery-image.active {
+  display: block;
+  opacity: 1;
+}
+
+.tabs {
+  margin-top: 20px;
+}
+
+.tab-button {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.tab-content {
+  border: 1px solid #4caf50;
+  border-top: none;
+  padding: 10px;
+  display: none;
+  border-radius: 0 5px 5px 5px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-left: 10px;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: green;
+}
