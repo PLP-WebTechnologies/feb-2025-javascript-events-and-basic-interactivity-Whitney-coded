@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Event Handling & Interactive Elements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Interactive Web Page</h1>
+
+  <!-- Event Handling Section -->
+  <section id="event-handling">
+    <h2>Event Handling 🎈</h2>
+    <button id="colorButton">Click me to change color</button>
+    <div id="hoverBox">Hover over me!</div>
+    <p>Press any key and see the key below:</p>
+    <div id="keyPressDisplay">No key pressed yet</div>
+    <button id="secretButton">Double-click or long press me 🤫</button>
+  </section>
+
+  <!-- Interactive Elements Section -->
+  <section id="interactive-elements">
+    <h2>Interactive Elements 🎮</h2>
+
+    <!-- Image Gallery / Slideshow -->
+    <div id="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Image+1" alt="Image 1" class="gallery-image active" />
+      <img src="https://via.placeholder.com/300x200?text=Image+2" alt="Image 2" class="gallery-image" />
+      <img src="https://via.placeholder.com/300x200?text=Image+3" alt="Image 3" class="gallery-image" />
+      <button id="prevImage">Prev</button>
+      <button id="nextImage">Next</button>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-button active" data-tab="tab1">Tab 1</button>
+      <button class="tab-button" data-tab="tab2">Tab 2</button>
+      <button class="tab-button" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content active" id="tab1">Content for Tab 1</div>
+    <div class="tab-content" id="tab2">Content for Tab 2</div>
+    <div class="tab-content" id="tab3">Content for Tab 3</div>
+  </section>
+
+  <!-- Form Validation Section -->
+  <section id="form-validation">
+    <h2>Form Validation 📋</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name (required):
+        <input type="text" id="name" required />
+        <span class="error" id="nameError"></span>
+      </label><br />
+      <label>
+        Email (required):
+        <input type="email" id="email" required />
+        <span class="error" id="emailError"></span>
+      </label><br />
+      <label>
+        Password (min 8 chars):
+        <input type="password" id="password" required minlength="8" />
+        <span class="error" id="passwordError"></span>
+      </label><br />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
